@@ -1,0 +1,116 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.news-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0.5rem;
+}
+
+    .news-card:hover {
+        transform: scale(1.05);
+        /*        cursor: pointer;*/
+        transition: 0.5s;
+    }
+
+.news-card-image {
+    width: 100%;
+}
+
+    .news-card-image img {
+        width: inherit;
+        height: auto;
+        min-height: 220px;
+        max-height: 220px;
+    }
+
+.news-card-header {
+    width: 100%;
+}
+
+.news-card-body {
+    width: 100%;
+}
+
+.news-card-content {
+    width: 98%;
+}
+
+.news-card-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.news-card-actions {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.user-card {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-between;
+    margin: 1.5rem auto;
+    max-width: 550px;
+}
+
+.user-card-img-container {
+    width: 100%;
+    margin: 0.2rem auto;
+}
+
+    .user-card-img-container img {
+        width: inherit;
+        max-width: 250px;
+        height: auto;
+        min-height: 250px;
+        max-height: 250px;
+        display: block;
+        margin: 0.2rem auto;
+    }
+
+.user-card-body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0.3rem;
+}
+
+.user-card-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: inherit;
+}
+
+    .user-card-info p {
+        text-align: justify;
+    }

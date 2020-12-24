@@ -1,0 +1,222 @@
+@import "flight-mixins.scss";
+@import "flight-variables.scss";
+
+* {
+    margin: 0;
+}
+
+html,
+body {
+    height: $defaultHeight;
+    width: $defaultWidth;
+    margin: 0 auto;
+}
+
+div {
+    display: flex;
+}
+
+.main-container,
+.flights-container,
+.left,
+.right {
+    flex-direction: column;
+}
+
+.main-container {
+    width: $defaultWidth;
+    height: $defaultHeight;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    width: $defaultWidth;
+    height: 15%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $mainBlueCol;
+}
+
+.header-text,
+.header-current-location {
+    color: $textColWhite;
+}
+
+.header-text,
+.flight-types,
+.search-bar {
+    margin-left: 5%;
+}
+
+.header-current-location {
+    margin-right: 5%;
+}
+
+.flights-container {
+    width: $defaultWidth;
+    height: 85%;
+    background-color: $flightsContainerBgCol;
+}
+
+.flight-types,
+.search-bar,
+.sidebars {
+    margin-top: 2%;
+    flex-direction: row;
+}
+
+.flight-types {
+    * {
+        margin-right: 0.5%;
+    }
+}
+
+.round-trip {
+    margin-left: 2%;
+}
+
+.search-bar {
+    * {
+        margin-right: 1%;
+        width: 19%;
+        height: 100%;
+    }
+
+    select {
+        option {
+            span {
+                color: gray;
+            }
+        }
+    }
+}
+
+.search-btn {
+    @include buttonMix();
+    width: 140px;
+    height: 40px;
+}
+
+.sidebars {
+    width: 94%;
+}
+
+.left {
+    margin-left: 5%;
+    width: 23%;
+    background-color: $sidebarBgCol;
+
+    * {
+        margin-left: 0.8%;
+    }
+}
+
+.stops,
+.prices,
+.airlines {
+    flex-direction: column;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    width: 100%;
+}
+
+.checkbox-container {
+    * {
+        margin-right: 2%;
+    }
+}
+
+.price-container {
+    width: 50%;
+
+    * {
+        margin-right: 2%;
+    }
+
+    h5 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    input {
+        height: 25px;
+        text-align: center;
+        font-size: 20px;
+    }
+}
+
+.h4-left {
+    color: $mainBlueCol;
+    font-weight: bold;
+}
+
+.right {
+    width: 73%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.right-header,
+.table-cell {
+    flex-direction: column;
+}
+
+.right-header {
+    h2 {
+        text-align: center;
+    }
+
+    margin-bottom: 2%;
+    background-color: $sidebarBgCol;
+    min-width: 100%;
+    min-height: 30%;
+    justify-content: center;
+}
+
+.flights-table {
+    border: $borderTable;
+    border-spacing: 0;
+
+    th {
+        color: $thCol;
+    }
+
+    td {
+        text-align: center;
+    }
+
+    tr,
+    td {
+        background-color: $sidebarBgCol;
+        border-bottom: $borderTable;
+    }
+}
+
+.flights-table tr:first-child th {
+    border-bottom: $borderTable;
+}
+
+.table-cell {
+    h4 {
+        color: $tdH4Col;
+    }
+
+    p {
+        color: $tdPCol;
+    }
+
+    input[type="button"] {
+        @include buttonMix();
+        width: 50px;
+        height: 30px;
+    }
+
+    align-items: center;
+
+    a {
+        display: block;
+        text-decoration: none;
+        color: $aCol;
+    }
+}

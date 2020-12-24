@@ -1,0 +1,53 @@
+﻿body {
+    background-color: rgb(209, 209, 209);
+}
+
+.my-wrapper {
+    /*background-image: url("img/home-banner.jpg");*/
+}
+
+.my-container {
+}
+
+.img-left {
+    padding-top: 230px;
+    padding-bottom: 230px;
+}
+
+.my-content {
+    text-align: left;
+    margin-left: 70px;
+}
+
+    .my-content h2 {
+        margin-top: 0px;
+        font-size: 60px;
+        font-weight: bold;
+        line-height: 72px;
+        margin-bottom: 20px;
+    }
+
+    .my-content p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+.center-div {
+    margin: 0 auto;
+}
+
+.game-img {
+    height: auto;
+    min-height: 135px;
+    max-height: 135px;
+    width: 98%;
+}
+
+.details-img {
+    width: 50%;
+}
+
+.add-to-cart-details {
+    width: 25%;
+    margin: 0 auto;
+}

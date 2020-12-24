@@ -1,0 +1,54 @@
+div {
+    /* border: 0.5px solid black; */
+    margin: 0.1%;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+}
+
+.top {
+    height: 18%;
+    background-color: burlywood;
+    border: 0.5px solid black;
+}
+
+.second-container {
+    height: 81%;
+}
+
+.left-sidebar,
+.right-sidebar {
+    height: 99%;
+    width: 18%;
+    border-bottom: 0.5px solid black;
+    border-left: 0.5px solid black;
+    border-right: 0.5px solid black;
+    background-color: cornflowerblue;
+}
+
+.left-sidebar {
+    float: left;
+
+}
+
+.left-item,
+.right-item {
+    height: 33%;
+    border-top: 0.5px solid black;
+
+}
+
+.right-sidebar {
+    float: right;
+    background-color: darkkhaki;
+}
+
+.bottom {
+    height: 99%;
+    width: 62%;
+    margin: 0.5% auto;
+    border: 0.5px solid black;
+    background-color: darkgreen;
+}

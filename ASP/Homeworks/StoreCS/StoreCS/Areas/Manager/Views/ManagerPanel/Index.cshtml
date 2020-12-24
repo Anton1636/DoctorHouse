@@ -1,0 +1,18 @@
+﻿@model IEnumerable<StoreCS.Models.NewsViewModel>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>News list</h2>
+
+<p>
+    @Html.ActionLink("Create New", "CreateNews")
+</p>
+
+<div class="container">
+    @{
+        Html.RenderPartial("Partial/NewsPartial", Model);
+    }
+</div>

@@ -1,0 +1,42 @@
+.center-div {
+    margin: 0.5% auto;
+}
+
+.my-card {
+    min-height: 485px;
+}
+
+.my-card-title {
+    min-height: 48px;
+}
+
+.my-card-text {
+    min-height: 24px;
+}
+
+.my-star {
+    color: rgb(255, 217, 0);
+    font-size: 40px;
+}
+
+.my-star:hover {
+    cursor: pointer;
+}
+
+.my-trashcan {
+    color: red;
+    font-size: 40px;
+}
+
+.my-trashcan:hover {
+    cursor: pointer;
+}
+
+.my-edit {
+    color: green;
+    font-size: 40px;
+}
+
+.my-edit:hover {
+    cursor: pointer;
+}

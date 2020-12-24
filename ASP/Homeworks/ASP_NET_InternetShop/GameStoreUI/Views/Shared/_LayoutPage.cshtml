@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+@using System.Web.Optimization;
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+</head>
+<body class="sidebar-collapse">
+    <div class="wrapper my-wrapper">
+        @{
+            Html.RenderPartial("Header");
+        }
+        @RenderBody()
+    </div>
+    <script src="~/Scripts/jquery-3.0.0.min.js"></script>
+    <script src="~/Scripts/popper.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/41174f93d5.js" crossorigin="anonymous"></script>
+    @Scripts.Render("~/bundles/CustomScripts")
+
+</body>
+</html>

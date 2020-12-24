@@ -1,0 +1,153 @@
+@import "login-mixins.scss";
+@import "login-variables.scss";
+
+* {
+    margin: 0;
+}
+
+html,
+body {
+    height: $defaultHeight;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.main,
+.container {
+    height: $defaultHeight;
+    width: $defaultWidth;
+}
+
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container,
+.login {
+    height: $defaultHeight;
+}
+
+.container {
+    max-width: $maxWidthMain;
+    background-color: $mainBg;
+}
+
+.header {
+    h2 {
+        font-size: 20px;
+    }
+}
+
+.form,
+.login {
+    width: $defaultWidth;
+}
+
+.login,
+.social {
+    max-width: $maxWidthForm;
+    width: 80%;
+}
+
+.login {
+    background-color: $formBg;
+}
+
+input {
+    border: none;
+    margin: 5%;
+}
+
+.userName,
+.password,
+.button {
+    width: 90%;
+}
+
+input[type=text],
+input[type=password],
+input[type=button] {
+    width: $defaultWidth;
+    font-size: 16px;
+    padding: 5%;
+    text-align: center;
+}
+
+input[type=text],
+input[type=password] {
+    background-color: $inputBg;
+    font-size: 12px;
+
+    &::placeholder {
+        font-weight: bold;
+        color: $plholCol;
+        font-size: 14px;
+    }
+}
+
+input[type=button] {
+    display: block;
+    margin: 0 auto;
+    background-color: $btnCol;
+    color: $btnTextCol;
+
+    &:hover {
+        cursor: grab;
+    }
+}
+
+.text-forgot {
+    margin-top: 15%;
+
+    &:hover {
+        cursor: grab;
+    }
+}
+
+.text {
+    color: $forgotCol;
+    font-weight: bold;
+}
+
+.or-login {
+    margin: 10%;
+
+    .or {
+        font-weight: bold;
+        color: $inputBg;
+        font-size: 20px;
+    }
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+button {
+    width: 100px;
+    height: 40px;
+
+    i {
+        font-size: 16px;
+        color: $inputBg;
+    }
+
+    &:hover {
+        cursor: grab;
+    }
+}
+
+.fb {
+    background-color: $fbCol;
+}
+
+.tw {
+    background-color: $twCol;
+}

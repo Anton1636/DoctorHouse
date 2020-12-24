@@ -1,0 +1,188 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    height: 600px;
+}
+
+div {
+    display: flex;
+}
+
+.top-container {
+    width: 100%;
+    height: 55%;
+    flex-wrap: wrap;
+}
+
+.header {
+    background-color: rgb(49, 49, 49);
+    width: 15%;
+}
+
+.menu,
+.menu-bot {
+    background-color: lightpink;
+}
+
+.menu {
+    width: 85%;
+}
+
+.header,
+.menu {
+    height: 10%;
+}
+
+.hero {
+    background-color: royalblue;
+    width: 100%;
+    height: 90%;
+}
+
+.bot-container {
+    width: 100%;
+    height: 44%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.main,
+.main-bot {
+    background-color: rgb(51, 41, 41);
+    width: 50%;
+}
+
+.image-extra-container {
+    width: 25%;
+    flex-direction: column;
+}
+
+.image,
+.image-bot {
+    background-color: cadetblue;
+}
+
+.extra,
+.extra-bot {
+    background: chartreuse;
+}
+
+.image,
+.extra {
+    width: 100%;
+    height: 50%;
+}
+
+.main,
+.image-extra-container {
+    height: 70%;
+}
+
+.banner,
+.banner-bot {
+    background-color: yellow;
+    width: 100%;
+    height: 40%;
+}
+
+
+
+@media(max-width: 768px) {
+
+    .top-container,
+    .bot-container,
+    .image-extra-container {
+        justify-content: baseline;
+        order: 1;
+    }
+
+    .header,
+    .menu,
+    .hero,
+    .main,
+    .image,
+    .extra,
+    .banner,
+    .image-extra-container {
+        width: 100%;
+    }
+
+    .image {
+        order: 1;
+    }
+
+    .bot-tablet {
+        display: none;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+
+    .bot-container,
+    .menu {
+        display: none;
+    }
+
+    .bot-tablet {
+        display: flex;
+        width: 100%;
+        height: 40%;
+    }
+
+    .other-tablet {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .other-tablet,
+    .menu-bot {
+        height: 100%;
+    }
+
+    .menu-bot {
+        width: 23%;
+    }
+
+    .header,
+    .hero,
+    .main-bot,
+    .banner-bot,
+    .image-extra-container-bot,
+    .other-tablet {
+        width: 100%;
+    }
+
+    .main-bot {
+        height: 50%;
+    }
+
+    .image-extra-container-bot {
+        flex-direction: row;
+        order: 2;
+    }
+
+    .extra-bot{
+        width: 65%;
+    }
+
+    .image-bot {
+        width: 35%;
+    }
+
+    .image-bot {
+        order: 2;
+    }
+
+    .image-extra-container-bot,
+    .banner-bot {
+        height: 25%;
+    }
+
+
+}
+
+@media(min-width: 992px) {
+    .bot-tablet {
+        display: none;
+    }
+}

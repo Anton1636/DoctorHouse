@@ -1,0 +1,151 @@
+html,
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.actions {
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    margin: 2%;
+}
+
+.refill-ingridients,
+.get-drinks {
+    background-color: aquamarine;
+    padding: 1%;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+}
+
+.refill-ingridients:hover,
+.get-drinks:hover {
+    cursor: pointer;
+    background-color: rgb(127, 214, 255);
+}
+
+.refill-actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.refill-types {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.refill {
+    margin: 1%;
+    padding: 1%;
+    width: 75px;
+    background-color: rgb(255, 241, 47);
+    display: flex;
+    justify-content: center;
+}
+
+.refill:hover {
+    cursor: pointer;
+    background-color: greenyellow;
+}
+
+.drinks {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container,
+.machine,
+.drinks-types,
+.drink,
+.ingredients,
+.creating,
+.done,
+.error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container,
+.machine,
+.drink,
+.creating,
+.done,
+.error {
+    flex-direction: column;
+}
+
+.drink {
+    width: 85px;
+}
+
+.drink:hover {
+    cursor: pointer;
+}
+
+.drinks-types {
+    justify-content: space-between;
+}
+
+.machine {
+    width: 60%;
+    background-color: rgb(68, 128, 68);
+}
+
+.drinks-types,
+.ingredients,
+.creating,
+.done {
+    width: 50%;
+}
+
+.drink-text {
+    color: white;
+}
+
+.coffee {
+    background-color: rgb(31, 11, 11);
+}
+
+.tea {
+    background-color: rgb(141, 21, 21);
+}
+
+.cappuccino {
+    background-color: rgb(105, 58, 58);
+}
+
+.select {
+    margin: 2%;
+    padding: 2%;
+    display: flex;
+}
+
+.select * {
+    margin: 5px;
+}
+
+input {
+    width: 50px;
+}
+
+.display-none {
+    display: none;
+}

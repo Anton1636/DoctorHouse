@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import "mixins.scss";
+@import "variables.scss";
+
+@font-face {
+    font-family: 'Gabriola';
+    src: url('../fonts/Gabriola.woff2') format('woff2'),
+        url('../fonts/Gabriola.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    display: flex;
+}
+
+.main-container {
+    height: 100%;
+    //min-height: 100%;
+    width: 100%;
+    //min-width: 100%;
+}
+
+.main-container {
+    @include colFlex();
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    width: 100%;
+    height: 10%;
+    background-color: $mainCol;
+    justify-content: space-around;
+}
+
+.menu-phone-buttons {
+    width: 50%;
+    justify-content: space-between;
+}
+
+.menu {
+    width: 50%;
+}
+
+.ul-menu {
+    width: 100%;
+
+    li {
+        float: left;
+        margin-right: 5%;
+
+        a {
+            text-decoration: none;
+            @include mainMenuItem();
+        }
+    }
+
+    list-style-type: none;
+}
+
+.my-phone {
+    color: $white;
+}
+
+.my-phone,
+.btn-si,
+.btn-order {
+    align-self: center;
+}
+
+.btn-si,
+.btn-order {
+    display: flex;
+    @include centerFlex();
+    @include btnCommon();
+    @include textBtn();
+}
+
+.btn-si {
+    background-color: $signInCol;
+}
+
+.btn-order {
+    background-color: $orange;
+}
+
+.main-info {
+    background-image: url(../img/main-bg.png);
+    @include centerFlex();
+}
+
+.text-button {
+    @include colFlex();
+    margin-left: 5%;
+}
+.girl-img{
+    margin-right: 5%;
+}
+.main-info-h1 {
+    @include mainInfoH();
+    width: 50%;
+}
+
+.main-info-bes-net {
+    @include maininfoHBlue();
+}
+
+.main-info-p {
+    @include paragraph();
+    @include paragraphGrey();
+}
+
+.main-info-button {
+    @include btnCommon();
+    @include textBtn();
+    background-color: $orange;
+    width: 220px;
+}
+
+.selects {
+    align-content: center;
+    justify-content: space-around;
+    width: 80%;
+    align-self: center;
+    background-color: $welcomeCol;
+    align-content: center;
+    align-items: center;
+}
+
+.select-opt {
+    @include colFlex();
+}
+
+.lab-select {
+    @include label();
+}
+
+.select-opt {
+    select {
+        @include dropDownItem();
+    }
+}
+
+.sel-opt {
+    display: flex;
+    @include centerFlex();
+    @include dropDownItemText();
+}
+
+input,
+textarea {
+    border: 1px solid #eeeeee;
+    box-sizing: border-box;
+    margin: 0;
+    outline: none;
+    padding: 10px;
+}
+
+input[type="button"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+.input-group {
+    @include dropDownItem();
+    clear: both;
+    margin: 15px 0;
+    position: relative;
+}
+
+.input-group input[type='button'] {
+    background-color: #eeeeee;
+    min-width: 38px;
+    width: auto;
+}
+
+.input-group .quantity-field {
+    position: relative;
+    height: 38px;
+    left: -6px;
+    text-align: center;
+    width: 62px;
+    display: inline-block;
+    font-size: 13px;
+    margin: 0 0 5px;
+    resize: vertical;
+}
+
+.welcome-sitename {
+    width: 80%;
+    @include centerFlex();
+    justify-content: space-between;
+}
+
+.welcome-article {
+    @include colFlex();
+    margin-left: 5%;
+}
+
+.id-item-white,
+.id-item-blue {
+    @include idItem();
+}
+
+.id-item-blue {
+    @include idWhiteBg();
+}
+
+.id-item-white {
+    @include idBlueBg();
+}
+
+.article-header-black,
+.article-header-white {
+    @include articleHeader();
+}
+
+.article-header-black {
+    @include articleHeaderBlack();
+}
+
+.article-header-white {
+    @include articleHeaderWhite();
+}
+
+.par-grey,
+.par-white {
+    @include paragraph();
+}
+
+.par-grey {
+    @include paragraphGrey();
+}
+
+.par-white {
+    @include paragraphWhite();
+}
+
+.our-advantages,
+.adv-item {
+    @include colFlex();
+}
+
+.our-advantages {
+    background-image: url(../img/advantages-bg.png);
+    width: 100%;
+}
+
+.adv-items {
+    @include rowFlex();
+    justify-content: space-around;
+}
+
+.adv-img {
+    width: 20%;
+}
+
+.adv-item {
+    @include centerFlex();
+    background-color: $white;
+    width: 30%;
+}
+
+.adv-text {
+    @include colFlex();
+}
+
+.btn-place-order,
+.adv-text {
+    align-self: center;
+}
+
+.btn-place {
+    width: 220px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.center-h3,
+.center-h4,
+.p-adv {
+    text-align: center;
+}
+
+.adv-h4 {
+    @include subItemHeader();
+}
+
+.how-it-works {
+    @include colFlex();
+    width: 80%;
+}
+
+.hiw-item {
+    width: 20%;
+}
+
+
+.discounts-testimonials-container {
+    position: relative;
+    @include colFlex();
+    width: 100%;
+    align-items: center;
+}
+
+.offs-coupon {
+    position: absolute;
+    height: 35%;
+    width: 40%;
+    top: 12%;
+}
+
+.discount-program {
+    background: url(../img/discounts-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 278px;
+    //min-height: 35%;
+    width: 100%;
+    @include colFlex();
+    align-items: center;
+}
+
+.testimonials {
+    @include colFlex();
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    margin-top: 10%;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.p-disc {
+    width: 50%;
+    margin-top: 1%;
+    text-align: center;
+}
+
+.p-test {
+    width: 50%;
+    text-align: justify;
+}
+
+.h4-bold {
+    font-weight: bold;
+}
+
+.par-date {
+    font-family: Poppins;
+    font-size: 13px;
+    font-weight: 300;
+    text-align: center;
+    color: #a3a6a9;
+}
+
+.offs {
+    @include rowFlex();
+    background-color: $white;
+    flex-wrap: wrap;
+}
+
+.off-item {
+    @include colFlex();
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+
+    h1,
+    p,
+    h4 {
+        margin-top: -10%;
+    }
+}
+
+.h-off {
+    @include offs();
+}
+
+.coupon-img {
+    width: 70%;
+}
+
+.footer-container {
+    @include colFlex();
+    width: 100%;
+    background-color: $welcomeCol;
+    align-items: center;
+    hr{
+        width: 75%;
+        border: 0.5px solid $white;
+    }
+}
+
+.footer-top,
+.footer-mid,
+.footer-bot {
+    width: 80%;
+    align-items: center;
+}
+
+.footer-top {
+    justify-content: space-between;
+    align-items: center;
+
+    .menu {
+        width: 60%;
+    }
+}
+
+.footer-mid-sections {
+    justify-content: space-around;
+}
+
+.footer-bot-text {
+    @include colFlex();
+    justify-content: space-between;
+
+    p {
+        &:nth-child(2n) {
+            margin-top: -5%;
+        }
+    }
+}
+
+.section-item {
+    @include colFlex();
+    align-items: center;
+
+    h4 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 12px;
+        width: 70%;
+        margin-top: -5%;
+    }
+}
+
+.my-white-ico {
+    color: $white;
+}
+
+.footer-bot {
+    justify-content: space-between;
+}
+
+.footer-bot-icon-text {
+    width: 20%;
+    align-items: center;
+
+    img {
+        width: 20%;
+        height: 20%;
+        margin-right: 2%;
+    }
+
+    .text {
+        width: 100%;
+        @include colFlex();
+
+        p {
+            &:nth-child(2n) {
+                margin-top: -5%;
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+.my-card {
+  margin: 10px;
+}
+
+.my-card-img {
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+  max-width: 250px;
+  min-height: 250px;
+}
+
+.my-icon {
+
+  font-size: 25px;
+}
+
+.my-icon:hover {
+  cursor: pointer;
+}
+
+.my-star-icon {
+  color: rgb(255, 217, 0);
+}
+
+.my-eye-icon {
+  color: rgb(128, 0, 49);
+}
+
+.my-edit-icon {
+  color: grey;
+}
+
+.my-icon-done {
+  color: green;
+}
+
+.my-icon-undone {
+  color: red;
+}

@@ -1,0 +1,52 @@
+.text-to-change {
+    width: 80%;
+}
+
+.controls {
+    display: flex;
+    margin: 5px;
+    width: 45%;
+}
+
+.controls,
+.changed-text,
+#textToChange {
+    background-color: #fbf2e9;
+}
+
+.controls * {
+    margin: 5px;
+}
+
+.control-item * {
+    margin: 2px;
+}
+
+.changed-text {
+    border: 1px solid black;
+    width: 45%;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.justify {
+    text-align: justify;
+}

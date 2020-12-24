@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.main,
+.container {
+  height: 100%;
+  width: 100%;
+}
+
+div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container,
+.login {
+  height: 100%;
+}
+
+.container {
+  max-width: 500px;
+  background-color: #e55d45;
+}
+
+.header h2 {
+  font-size: 20px;
+}
+
+.form,
+.login {
+  width: 100%;
+}
+
+.login,
+.social {
+  max-width: 300px;
+  width: 80%;
+}
+
+.login {
+  background-color: #e6e4e5;
+}
+
+input {
+  border: none;
+  margin: 5%;
+}
+
+.userName,
+.password,
+.button {
+  width: 90%;
+}
+
+input[type=text],
+input[type=password],
+input[type=button] {
+  width: 100%;
+  font-size: 16px;
+  padding: 5%;
+  text-align: center;
+}
+
+input[type=text],
+input[type=password] {
+  background-color: #ffffff;
+  font-size: 12px;
+}
+input[type=text]::placeholder,
+input[type=password]::placeholder {
+  font-weight: bold;
+  color: #ccc8c7;
+  font-size: 14px;
+}
+
+input[type=button] {
+  display: block;
+  margin: 0 auto;
+  background-color: #32a759;
+  color: #e8fdee;
+}
+input[type=button]:hover {
+  cursor: grab;
+}
+
+.text-forgot {
+  margin-top: 15%;
+}
+.text-forgot:hover {
+  cursor: grab;
+}
+
+.text {
+  color: #dd6145;
+  font-weight: bold;
+}
+
+.or-login {
+  margin: 10%;
+}
+.or-login .or {
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+button {
+  width: 100px;
+  height: 40px;
+}
+button i {
+  font-size: 16px;
+  color: #ffffff;
+}
+button:hover {
+  cursor: grab;
+}
+
+.fb {
+  background-color: #3a5ba0;
+}
+
+.tw {
+  background-color: #1cb8eb;
+}

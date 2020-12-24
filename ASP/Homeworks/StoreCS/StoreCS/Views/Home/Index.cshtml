@@ -1,0 +1,15 @@
+﻿@model IEnumerable<StoreCS.Models.NewsViewModel>
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>News list</h1>
+</div>
+
+<div class="container">
+    @{ 
+        Html.RenderPartial("Partial/NewsPartial", Model);
+    }
+</div>
